@@ -1,0 +1,128 @@
+/** Variáveis **/
+
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+/* RESET CSS */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+body {
+   background: var(--preta);
+   font-family: Arial, Helvetica, sans-serif;
+   color: #fff;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px ;
+}
+
+header .logo{
+    margin-left: 15px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color:#fff;
+}
+
+
+/* filme princial */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/img/capa-mr-robot.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filme-principal .container {
+    width: 60%;
+    margin-left: 35px;
+}
+
+
+/* botao */ 
+
+.botao {
+    background-color: rgba(0, 0, 0, 0.568);
+    color: white;
+    border: none;
+
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 12px;
+
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.botao a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.botao a:hover {
+    color:black;
+}
+
+
+.botao:hover {
+    background-color: #fff;
+    color: black;
+    transition: .4s ease all;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+/** elemetos carrossel **/
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
+}
